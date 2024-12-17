@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{card_type_code}-{acquistion_code}",
+ "creation": "2024-12-13 19:40:48.209571",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_type_code",
+  "acquisition_code",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_type_code",
+   "fieldtype": "Link",
+   "label": "Loyalty Card Type",
+   "options": "Loyalty Card Type",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "acquisition_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Acquisition Code",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "length": 64
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-13 19:43:20.355248",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Acquisition Type",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

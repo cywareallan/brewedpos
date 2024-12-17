@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{card_type_code}-{description}",
+ "creation": "2024-12-13 17:59:09.802812",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "card_type_code",
+  "description",
+  "is_active",
+  "upgrade",
+  "mechanics_tab",
+  "amount",
+  "points",
+  "minimum_points",
+  "minimum_age",
+  "expiry_days",
+  "application_type_tab",
+  "application_type",
+  "transaction_type_tab",
+  "transaction_type",
+  "remap_type_tab",
+  "remap_type",
+  "reward_type_tab",
+  "s",
+  "reward_type",
+  "tabattribute_type",
+  "attribute_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "card_type_code",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Card Type Code",
+   "reqd": 1,
+   "search_index": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description",
+   "length": 64
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_preview": 1,
+   "label": "Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "upgrade",
+   "fieldtype": "Check",
+   "label": "Upgrade"
+  },
+  {
+   "fieldname": "mechanics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Mechanics"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Peso Value",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "points",
+   "fieldtype": "Float",
+   "label": "Points Equivalent",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "minimum_points",
+   "fieldtype": "Float",
+   "label": "Minimum Points for Redemption",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "minimum_age",
+   "fieldtype": "Int",
+   "label": "Age Limit",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_days",
+   "fieldtype": "Int",
+   "label": "Points Expiration in Days",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_type_tab",
+   "fieldtype": "Tab Break",
+   "label": "Application Type"
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Table",
+   "options": "Loyalty Application Type"
+  },
+  {
+   "fieldname": "transaction_type_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transaction Type"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Table",
+   "options": "Loyalty Transaction Type"
+  },
+  {
+   "fieldname": "remap_type_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remap Type"
+  },
+  {
+   "fieldname": "remap_type",
+   "fieldtype": "Table",
+   "options": "Loyalty Remap Type"
+  },
+  {
+   "fieldname": "reward_type_tab",
+   "fieldtype": "Tab Break",
+   "label": "Reward Type"
+  },
+  {
+   "fieldname": "reward_type",
+   "fieldtype": "Table",
+   "options": "Loyalty Reward Type"
+  },
+  {
+   "fieldname": "s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tabattribute_type",
+   "fieldtype": "Tab Break",
+   "label": "Attribute Type"
+  },
+  {
+   "fieldname": "attribute_type",
+   "fieldtype": "Table",
+   "options": "Loyalty Attribute Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-14 08:51:34.258684",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Card Type",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

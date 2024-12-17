@@ -8,8 +8,6 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Sync ERP records with the POS database
-fixtures = ['Loyalty Card Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 'Loyalty Transaction Type', 'Loyalty Remap Type', 'Loyalty Reward Type', 'Loyalty Application Type', 'Custom Field', 'Property Setter']
-
 doc_events = {
     "ConsAllan": {
         "on_update": "brewedpos.hook_consallan.api.ca_update",
