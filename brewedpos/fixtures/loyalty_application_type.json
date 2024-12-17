@@ -1,0 +1,13 @@
+[
+ {
+  "application_type_code": "walkin",
+  "description": "Walk In",
+  "docstatus": 0,
+  "doctype": "Loyalty Application Type",
+  "modified": "2024-12-14 09:33:14.012883",
+  "name": "card_type_code-walkin",
+  "parent": "test-Test Card",
+  "parentfield": "application_type",
+  "parenttype": "Loyalty Card Type"
+ }
+]

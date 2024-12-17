@@ -10,11 +10,11 @@ app_license = "mit"
 # Sync ERP records with the POS database
 fixtures = ['Loyalty Card Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 'Loyalty Transaction Type', 'Loyalty Remap Type', 'Loyalty Reward Type', 'Loyalty Application Type', 'Custom Field', 'Property Setter']
 
-doc_events = {
-    "ConsAllan": {
-        "on_update": "brewedpos.hook_consallan.api.ca_update",
- 	 	"after_insert": "brewedpos.hook_consallan.api.ca_update"
- 	}
+#doc_events = {
+#    "ConsAllan": {
+#        "on_update": "brewedpos.hook_consallan.api.ca_update",
+# 	 	"after_insert": "brewedpos.hook_consallan.api.ca_update"
+# 	}
  	# "Company": {
  	# 	"on_trash": "brewedpos.hook_company.api.company_delete",
     #     "on_update": "brewedpos.hook_company.api.company_update",
@@ -39,4 +39,4 @@ doc_events = {
     #     "on_update": "brewedpos.hook_user.api.password_update",
  	#  	"after_insert": "brewedpos.hook_user.api.password_update"
  	# }
-}
+#}

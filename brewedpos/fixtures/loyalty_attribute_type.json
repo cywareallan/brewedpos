@@ -1,0 +1,24 @@
+[
+ {
+  "attribute_type_code": "CS",
+  "description": "Civil Status",
+  "docstatus": 0,
+  "doctype": "Loyalty Attribute Type",
+  "modified": "2024-12-14 09:33:14.012883",
+  "name": "CS-Civil Status",
+  "parent": "test-Test Card",
+  "parentfield": "attribute_type",
+  "parenttype": "Loyalty Card Type"
+ },
+ {
+  "attribute_type_code": "IL",
+  "description": "Income Level",
+  "docstatus": 0,
+  "doctype": "Loyalty Attribute Type",
+  "modified": "2024-12-14 09:33:14.012883",
+  "name": "IL-Income Level",
+  "parent": "test-Test Card",
+  "parentfield": "attribute_type",
+  "parenttype": "Loyalty Card Type"
+ }
+]

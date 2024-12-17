@@ -1,0 +1,11 @@
+[
+ {
+  "attribute_code": "single",
+  "attribute_type": "CS-Civil Status",
+  "description": "Single",
+  "docstatus": 0,
+  "doctype": "Loyalty Attribute",
+  "modified": "2024-12-14 09:38:06.248373",
+  "name": "CS-Civil Status-single"
+ }
+]

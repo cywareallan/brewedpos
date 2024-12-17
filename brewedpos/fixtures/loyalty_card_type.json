@@ -1,0 +1,45 @@
+[
+ {
+  "amount": 200.0,
+  "application_type": [
+   {
+    "application_type_code": "walkin",
+    "description": "Walk In",
+    "parent": "test-Test Card",
+    "parentfield": "application_type",
+    "parenttype": "Loyalty Card Type"
+   }
+  ],
+  "attribute_type": [
+   {
+    "attribute_type_code": "CS",
+    "description": "Civil Status",
+    "parent": "test-Test Card",
+    "parentfield": "attribute_type",
+    "parenttype": "Loyalty Card Type"
+   },
+   {
+    "attribute_type_code": "IL",
+    "description": "Income Level",
+    "parent": "test-Test Card",
+    "parentfield": "attribute_type",
+    "parenttype": "Loyalty Card Type"
+   }
+  ],
+  "card_type_code": "test",
+  "description": "Test Card",
+  "docstatus": 0,
+  "doctype": "Loyalty Card Type",
+  "expiry_days": 365,
+  "is_active": 1,
+  "minimum_age": 18,
+  "minimum_points": 200.0,
+  "modified": "2024-12-14 09:33:14.012883",
+  "name": "test-Test Card",
+  "points": 1.0,
+  "remap_type": [],
+  "reward_type": [],
+  "transaction_type": [],
+  "upgrade": 0
+ }
+]
