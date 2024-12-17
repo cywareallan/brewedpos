@@ -5,7 +5,7 @@ app_description = "ERP integration"
 app_email = "support@softwarebrewery.dev"
 app_license = "mit"
 
-fixtures = ['Deactivate Account Reasons','Custom Field','Property Setter']
+fixtures = ['Activate Account Reasons','Custom Field','Property Setter']
 # Apps
 # ------------------
 
