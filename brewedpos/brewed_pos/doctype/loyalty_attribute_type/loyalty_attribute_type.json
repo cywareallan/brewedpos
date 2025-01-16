@@ -25,12 +25,13 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Description"
+   "label": "Description",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-26 14:44:48.721596",
+ "modified": "2025-01-16 09:56:00.113456",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Attribute Type",

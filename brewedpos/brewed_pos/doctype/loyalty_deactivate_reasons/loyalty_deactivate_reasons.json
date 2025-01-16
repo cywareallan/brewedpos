@@ -27,7 +27,8 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Description",
-   "length": 64
+   "length": 64,
+   "reqd": 1
   },
   {
    "default": "0",
@@ -38,7 +39,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-26 16:15:26.884765",
+ "modified": "2025-01-16 09:54:14.435613",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Deactivate Reasons",

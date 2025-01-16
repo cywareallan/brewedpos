@@ -28,7 +28,8 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Description",
-   "length": 64
+   "length": 64,
+   "reqd": 1
   },
   {
    "default": "1",
@@ -41,7 +42,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-12-26 16:18:14.883084",
+ "modified": "2025-01-16 09:53:58.889428",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Transaction Type",

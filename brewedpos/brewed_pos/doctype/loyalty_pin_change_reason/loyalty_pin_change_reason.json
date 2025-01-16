@@ -26,12 +26,13 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Description",
-   "length": 64
+   "length": 64,
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-20 10:45:52.716246",
+ "modified": "2025-01-16 09:56:30.573841",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty PIN Change Reason",
