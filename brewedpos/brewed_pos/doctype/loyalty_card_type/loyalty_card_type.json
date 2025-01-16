@@ -10,7 +10,7 @@
   "card_type_code",
   "description",
   "is_active",
-  "upgrade",
+  "is_upgrade",
   "mechanics_tab",
   "amount",
   "points",
@@ -25,9 +25,7 @@
   "remap_type",
   "reward_type_tab",
   "s",
-  "reward_type",
-  "tabattribute_type",
-  "attribute_type"
+  "reward_type"
  ],
  "fields": [
   {
@@ -60,12 +58,6 @@
    "in_filter": 1,
    "in_preview": 1,
    "label": "Active"
-  },
-  {
-   "default": "0",
-   "fieldname": "upgrade",
-   "fieldtype": "Check",
-   "label": "Upgrade"
   },
   {
    "fieldname": "mechanics_tab",
@@ -155,19 +147,15 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "tabattribute_type",
-   "fieldtype": "Tab Break",
-   "label": "Attribute Type"
-  },
-  {
-   "fieldname": "attribute_type",
-   "fieldtype": "Table",
-   "options": "Loyalty Attribute Type"
+   "default": "0",
+   "fieldname": "is_upgrade",
+   "fieldtype": "Check",
+   "label": "Upgrade"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-14 08:51:34.258684",
+ "modified": "2024-12-26 14:16:50.628795",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Card Type",

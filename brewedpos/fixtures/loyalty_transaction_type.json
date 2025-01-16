@@ -1,1 +1,26 @@
-[]
+[
+ {
+  "description": "POS",
+  "docstatus": 0,
+  "doctype": "Loyalty Transaction Type",
+  "manual": 0,
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "POS",
+  "parent": "blue-Blue",
+  "parentfield": "transaction_type",
+  "parenttype": "Loyalty Card Type",
+  "transaction_code": "1"
+ },
+ {
+  "description": "Manual Entry",
+  "docstatus": 0,
+  "doctype": "Loyalty Transaction Type",
+  "manual": 1,
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "Manual Entry",
+  "parent": "blue-Blue",
+  "parentfield": "transaction_type",
+  "parenttype": "Loyalty Card Type",
+  "transaction_code": "100"
+ }
+]

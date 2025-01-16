@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "description": "Lost",
+  "docstatus": 0,
+  "doctype": "Loyalty Remap Type",
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "Lost",
+  "parent": "blue-Blue",
+  "parentfield": "remap_type",
+  "parenttype": "Loyalty Card Type",
+  "remap_type_code": "lost"
+ },
+ {
+  "description": "Damaged",
+  "docstatus": 0,
+  "doctype": "Loyalty Remap Type",
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "Damaged",
+  "parent": "blue-Blue",
+  "parentfield": "remap_type",
+  "parenttype": "Loyalty Card Type",
+  "remap_type_code": "damaged"
+ }
+]

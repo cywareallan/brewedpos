@@ -1,0 +1,67 @@
+[
+ {
+  "attribute": "Married",
+  "attribute_code": "married",
+  "attribute_type": "Civil Status",
+  "attribute_type_code": "CS",
+  "docstatus": 0,
+  "doctype": "Loyalty Customer Attribute",
+  "modified": "2025-01-15 17:10:03.739752",
+  "name": "103010310-CS",
+  "parent": "103010310",
+  "parentfield": "customer_attribute",
+  "parenttype": "Customer"
+ },
+ {
+  "attribute": "Single",
+  "attribute_code": "single",
+  "attribute_type": "Civil Status",
+  "attribute_type_code": "CS",
+  "docstatus": 0,
+  "doctype": "Loyalty Customer Attribute",
+  "modified": "2025-01-15 17:26:53.573078",
+  "name": "133430410-CS",
+  "parent": "133430410",
+  "parentfield": "customer_attribute",
+  "parenttype": "Customer"
+ },
+ {
+  "attribute": "Married",
+  "attribute_code": "married",
+  "attribute_type": "Civil Status",
+  "attribute_type_code": "CS",
+  "docstatus": 0,
+  "doctype": "Loyalty Customer Attribute",
+  "modified": "2025-01-15 16:43:04.993421",
+  "name": "4410123414-CS",
+  "parent": "4410123414",
+  "parentfield": "customer_attribute",
+  "parenttype": "Customer"
+ },
+ {
+  "attribute": "Male",
+  "attribute_code": "M",
+  "attribute_type": "Gender",
+  "attribute_type_code": "GND",
+  "docstatus": 0,
+  "doctype": "Loyalty Customer Attribute",
+  "modified": "2025-01-15 17:10:03.739752",
+  "name": "103010310-GND",
+  "parent": "103010310",
+  "parentfield": "customer_attribute",
+  "parenttype": "Customer"
+ },
+ {
+  "attribute": "Male",
+  "attribute_code": "M",
+  "attribute_type": "Gender",
+  "attribute_type_code": "GND",
+  "docstatus": 0,
+  "doctype": "Loyalty Customer Attribute",
+  "modified": "2025-01-15 17:26:53.573078",
+  "name": "133430410-GND",
+  "parent": "133430410",
+  "parentfield": "customer_attribute",
+  "parenttype": "Customer"
+ }
+]

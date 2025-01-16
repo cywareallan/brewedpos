@@ -8,13 +8,13 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Sync ERP records with the POS database
-fixtures = ['Loyalty Card Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 'Loyalty Transaction Type', 'Loyalty Remap Type', 'Loyalty Reward Type', 'Loyalty Application Type', 'Custom Field', 'Property Setter']
-
-#doc_events = {
-#    "ConsAllan": {
-#        "on_update": "brewedpos.hook_consallan.api.ca_update",
-# 	 	"after_insert": "brewedpos.hook_consallan.api.ca_update"
-# 	}
+doc_events = {
+    #"Loyalty Manual Entry": {
+ 	#	"after_insert": "brewedpos.hook_manual_entry.api.validate_entry"
+ 	#},
+    #"Loyalty Card Type": {
+ 	#	"before_insert": "brewedpos.hook_customer_card.api.validate_account"
+ 	#}
  	# "Company": {
  	# 	"on_trash": "brewedpos.hook_company.api.company_delete",
     #     "on_update": "brewedpos.hook_company.api.company_update",
@@ -39,4 +39,6 @@ fixtures = ['Loyalty Card Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 
     #     "on_update": "brewedpos.hook_user.api.password_update",
  	#  	"after_insert": "brewedpos.hook_user.api.password_update"
  	# }
-#}
+}
+
+fixtures = ['Customer', 'Loyalty Transaction Type', 'Loyalty Application Type', 'Loyalty Reward Type', 'Loyalty Remap Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 'Loyalty PIN Change Reason', 'Loyalty Deactivate Reasons', 'Loyalty Card Type', 'Loyalty Customer Attribute', 'Loyalty Rewards', 'Loyalty Redemption', 'Loyalty PIN Entry', 'Loyalty Card Replacement', 'Loyalty Account Activation', 'Loyalty Account Deactivation', 'Loyalty Add Points', 'Custom Field', 'Property Setter']

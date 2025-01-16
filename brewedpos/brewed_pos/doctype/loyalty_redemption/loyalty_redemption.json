@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-01-16 07:37:44.035246",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "branch",
+  "reward_type",
+  "reward",
+  "pin",
+  "column_break_rcxf",
+  "card_number",
+  "transaction_date",
+  "quantity",
+  "reward_points",
+  "system_datetime",
+  "card_type_code",
+  "reward_type_code",
+  "reward_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reward_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reward Type",
+   "link_filters": "[[\"Loyalty Reward Type\",\"parent\",\"=\",\"eval: doc.card_type\"]]",
+   "options": "Loyalty Reward Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reward",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reward",
+   "options": "Loyalty Rewards",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rcxf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_id.card_number",
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Number",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "reward.points",
+   "fieldname": "reward_points",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "reward_points"
+  },
+  {
+   "default": "Now",
+   "fieldname": "system_datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "system_datetime"
+  },
+  {
+   "fetch_from": "customer_id.card_type_code",
+   "fieldname": "card_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "card_type_code"
+  },
+  {
+   "fetch_from": "reward_type.reward_type_code",
+   "fieldname": "reward_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reward_type_code"
+  },
+  {
+   "fetch_from": "reward.reward_code",
+   "fieldname": "reward_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reward_code"
+  },
+  {
+   "fieldname": "pin",
+   "fieldtype": "Int",
+   "label": "PIN",
+   "length": 4,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-16 08:38:32.763831",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Redemption",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

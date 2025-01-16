@@ -1,19 +1,21 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{attribute_type}-{attribute_code}",
- "creation": "2024-12-14 08:54:24.588824",
+ "autoname": "format:{description}",
+ "creation": "2024-12-26 14:23:07.787938",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "attribute_type",
   "attribute_code",
-  "description"
+  "description",
+  "attribute_type_code"
  ],
  "fields": [
   {
    "fieldname": "attribute_type",
    "fieldtype": "Link",
+   "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
@@ -26,6 +28,7 @@
    "fieldname": "attribute_code",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Attribute Code",
    "reqd": 1,
@@ -39,11 +42,18 @@
    "in_standard_filter": 1,
    "label": "Description",
    "length": 64
+  },
+  {
+   "fetch_from": "attribute_type.attribute_type_code",
+   "fieldname": "attribute_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "attribute_type_code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-14 09:37:29.873795",
+ "modified": "2024-12-26 14:44:34.572179",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Attribute",

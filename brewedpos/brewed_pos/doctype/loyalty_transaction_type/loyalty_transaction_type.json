@@ -1,14 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{card_type_code}-{transaction_code}",
+ "autoname": "format:{description}",
  "creation": "2024-12-13 18:51:48.631078",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "transaction_code",
-  "description"
+  "description",
+  "manual"
  ],
  "fields": [
   {
@@ -28,12 +29,19 @@
    "in_standard_filter": 1,
    "label": "Description",
    "length": 64
+  },
+  {
+   "default": "1",
+   "fieldname": "manual",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Manual"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-12-13 20:11:03.654219",
+ "modified": "2024-12-26 16:18:14.883084",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Transaction Type",

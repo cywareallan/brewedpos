@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{card_number}",
+ "creation": "2024-12-23 17:27:36.464879",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_type",
+  "card_number",
+  "branch",
+  "application_type",
+  "application_date",
+  "card_type_code",
+  "application_type_code",
+  "total_points",
+  "total_redeemed",
+  "points_balance",
+  "total_sales",
+  "total_visits",
+  "active",
+  "customer_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Card Type",
+   "link_filters": "[[\"Loyalty Card Type\",\"is_active\",\"=\",1],[\"Loyalty Card Type\",\"is_upgrade\",\"=\",\"0\"]]",
+   "options": "Loyalty Card Type",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Card Number",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "application_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Application Type",
+   "link_filters": "[[\"Loyalty Application Type\",\"parent\",\"=\",\"eval: doc.card_type\"]]",
+   "options": "Loyalty Application Type",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Application Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "card_type.card_type_code",
+   "fieldname": "card_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "card_type_code"
+  },
+  {
+   "fetch_from": "application_type.application_type_code",
+   "fieldname": "application_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "application_type_code"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_points",
+   "fieldtype": "Float",
+   "label": "total_points",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_redeemed",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "total_redeemed",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "points_balance",
+   "fieldtype": "Float",
+   "label": "points_balance",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_sales",
+   "fieldtype": "Float",
+   "label": "total_sales",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_visits",
+   "fieldtype": "Float",
+   "label": "total_visits",
+   "precision": "0"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "active"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "customer_id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-14 13:53:50.870425",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Customer Card",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -4,9 +4,42 @@
   "description": "Walk In",
   "docstatus": 0,
   "doctype": "Loyalty Application Type",
-  "modified": "2024-12-14 09:33:14.012883",
-  "name": "card_type_code-walkin",
-  "parent": "test-Test Card",
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "Walk In",
+  "parent": "blue-Blue",
+  "parentfield": "application_type",
+  "parenttype": "Loyalty Card Type"
+ },
+ {
+  "application_type_code": "walkin",
+  "description": "Walk Inss",
+  "docstatus": 0,
+  "doctype": "Loyalty Application Type",
+  "modified": "2025-01-02 15:17:52.898418",
+  "name": "Walk Inss",
+  "parent": "gold-Gold",
+  "parentfield": "application_type",
+  "parenttype": "Loyalty Card Type"
+ },
+ {
+  "application_type_code": "mobile",
+  "description": "Mobile App",
+  "docstatus": 0,
+  "doctype": "Loyalty Application Type",
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "Mobile App",
+  "parent": "blue-Blue",
+  "parentfield": "application_type",
+  "parenttype": "Loyalty Card Type"
+ },
+ {
+  "application_type_code": "mobile",
+  "description": "Mobile App2",
+  "docstatus": 0,
+  "doctype": "Loyalty Application Type",
+  "modified": "2025-01-02 15:17:52.898418",
+  "name": "Mobile App2",
+  "parent": "gold-Gold",
   "parentfield": "application_type",
   "parenttype": "Loyalty Card Type"
  }

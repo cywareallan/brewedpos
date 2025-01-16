@@ -1,0 +1,13 @@
+[
+ {
+  "description": "Royal Umbrella",
+  "docstatus": 0,
+  "doctype": "Loyalty Rewards",
+  "modified": "2025-01-15 16:18:59.725717",
+  "name": "Royal Umbrella",
+  "points": 100.0,
+  "reward_code": "101",
+  "reward_type": "Merchandise",
+  "reward_type_code": "merch"
+ }
+]

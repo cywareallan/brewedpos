@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{card_type_code}-{reward_type_code}",
+ "autoname": "format:{description}",
  "creation": "2024-12-13 19:03:48.193045",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -33,7 +33,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-12-13 20:09:59.062554",
+ "modified": "2024-12-26 15:20:15.720492",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Reward Type",

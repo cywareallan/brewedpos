@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-01-16 08:32:34.557216",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "branch",
+  "pin_reason",
+  "pin",
+  "column_break_kyqx",
+  "card_number",
+  "system_datetime",
+  "pin_reason_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "link_filters": "[[\"Customer\",\"active\",\"=\",1]]",
+   "options": "Customer",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pin_reason",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reason",
+   "options": "Loyalty PIN Change Reason",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kyqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_id.card_number",
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Number"
+  },
+  {
+   "default": "Now",
+   "fieldname": "system_datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Date Time"
+  },
+  {
+   "fetch_from": "pin_reason.pin_change_code",
+   "fieldname": "pin_reason_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "pin_reason_code"
+  },
+  {
+   "fieldname": "pin",
+   "fieldtype": "Int",
+   "label": "PIN",
+   "length": 4,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-16 08:37:33.805597",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty PIN Entry",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

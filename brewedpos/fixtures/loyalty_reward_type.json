@@ -1,1 +1,13 @@
-[]
+[
+ {
+  "description": "Merchandise",
+  "docstatus": 0,
+  "doctype": "Loyalty Reward Type",
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "Merchandise",
+  "parent": "blue-Blue",
+  "parentfield": "reward_type",
+  "parenttype": "Loyalty Card Type",
+  "reward_type_code": "merch"
+ }
+]

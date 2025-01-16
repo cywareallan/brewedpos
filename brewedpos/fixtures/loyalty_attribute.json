@@ -1,11 +1,42 @@
 [
  {
+  "attribute_code": "F",
+  "attribute_type": "Gender",
+  "attribute_type_code": "GND",
+  "description": "Female",
+  "docstatus": 0,
+  "doctype": "Loyalty Attribute",
+  "modified": "2024-12-26 15:15:43.264875",
+  "name": "Female"
+ },
+ {
   "attribute_code": "single",
-  "attribute_type": "CS-Civil Status",
+  "attribute_type": "Civil Status",
+  "attribute_type_code": "CS",
   "description": "Single",
   "docstatus": 0,
   "doctype": "Loyalty Attribute",
-  "modified": "2024-12-14 09:38:06.248373",
-  "name": "CS-Civil Status-single"
+  "modified": "2024-12-26 15:15:06.541888",
+  "name": "Single"
+ },
+ {
+  "attribute_code": "M",
+  "attribute_type": "Gender",
+  "attribute_type_code": "GND",
+  "description": "Male",
+  "docstatus": 0,
+  "doctype": "Loyalty Attribute",
+  "modified": "2024-12-26 15:15:30.532515",
+  "name": "Male"
+ },
+ {
+  "attribute_code": "married",
+  "attribute_type": "Civil Status",
+  "attribute_type_code": "CS",
+  "description": "Married",
+  "docstatus": 0,
+  "doctype": "Loyalty Attribute",
+  "modified": "2024-12-26 15:15:18.134974",
+  "name": "Married"
  }
 ]

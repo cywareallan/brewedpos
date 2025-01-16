@@ -1,45 +1,110 @@
 [
  {
-  "amount": 200.0,
+  "amount": 1.0,
   "application_type": [
    {
     "application_type_code": "walkin",
-    "description": "Walk In",
-    "parent": "test-Test Card",
+    "description": "Walk Inss",
+    "parent": "gold-Gold",
+    "parentfield": "application_type",
+    "parenttype": "Loyalty Card Type"
+   },
+   {
+    "application_type_code": "mobile",
+    "description": "Mobile App2",
+    "parent": "gold-Gold",
     "parentfield": "application_type",
     "parenttype": "Loyalty Card Type"
    }
   ],
-  "attribute_type": [
-   {
-    "attribute_type_code": "CS",
-    "description": "Civil Status",
-    "parent": "test-Test Card",
-    "parentfield": "attribute_type",
-    "parenttype": "Loyalty Card Type"
-   },
-   {
-    "attribute_type_code": "IL",
-    "description": "Income Level",
-    "parent": "test-Test Card",
-    "parentfield": "attribute_type",
-    "parenttype": "Loyalty Card Type"
-   }
-  ],
-  "card_type_code": "test",
-  "description": "Test Card",
+  "card_type_code": "gold",
+  "description": "Gold",
   "docstatus": 0,
   "doctype": "Loyalty Card Type",
   "expiry_days": 365,
   "is_active": 1,
+  "is_upgrade": 0,
   "minimum_age": 18,
-  "minimum_points": 200.0,
-  "modified": "2024-12-14 09:33:14.012883",
-  "name": "test-Test Card",
+  "minimum_points": 10000.0,
+  "modified": "2025-01-02 15:17:52.898418",
+  "name": "gold-Gold",
   "points": 1.0,
   "remap_type": [],
   "reward_type": [],
-  "transaction_type": [],
-  "upgrade": 0
+  "transaction_type": []
+ },
+ {
+  "amount": 1.0,
+  "application_type": [
+   {
+    "application_type_code": "walkin",
+    "description": "Walk In",
+    "parent": "blue-Blue",
+    "parentfield": "application_type",
+    "parenttype": "Loyalty Card Type"
+   },
+   {
+    "application_type_code": "mobile",
+    "description": "Mobile App",
+    "parent": "blue-Blue",
+    "parentfield": "application_type",
+    "parenttype": "Loyalty Card Type"
+   }
+  ],
+  "card_type_code": "blue",
+  "description": "Blue",
+  "docstatus": 0,
+  "doctype": "Loyalty Card Type",
+  "expiry_days": 365,
+  "is_active": 1,
+  "is_upgrade": 0,
+  "minimum_age": 18,
+  "minimum_points": 10000.0,
+  "modified": "2024-12-26 16:18:34.223468",
+  "name": "blue-Blue",
+  "points": 1.0,
+  "remap_type": [
+   {
+    "description": "Lost",
+    "parent": "blue-Blue",
+    "parentfield": "remap_type",
+    "parenttype": "Loyalty Card Type",
+    "remap_type_code": "lost"
+   },
+   {
+    "description": "Damaged",
+    "parent": "blue-Blue",
+    "parentfield": "remap_type",
+    "parenttype": "Loyalty Card Type",
+    "remap_type_code": "damaged"
+   }
+  ],
+  "reward_type": [
+   {
+    "description": "Merchandise",
+    "parent": "blue-Blue",
+    "parentfield": "reward_type",
+    "parenttype": "Loyalty Card Type",
+    "reward_type_code": "merch"
+   }
+  ],
+  "transaction_type": [
+   {
+    "description": "POS",
+    "manual": 0,
+    "parent": "blue-Blue",
+    "parentfield": "transaction_type",
+    "parenttype": "Loyalty Card Type",
+    "transaction_code": "1"
+   },
+   {
+    "description": "Manual Entry",
+    "manual": 1,
+    "parent": "blue-Blue",
+    "parentfield": "transaction_type",
+    "parenttype": "Loyalty Card Type",
+    "transaction_code": "100"
+   }
+  ]
  }
 ]

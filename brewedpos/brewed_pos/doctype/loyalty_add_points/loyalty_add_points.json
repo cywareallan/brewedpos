@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-01-16 07:46:50.250707",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "transaction_type",
+  "transaction_date",
+  "register_num",
+  "transnum",
+  "column_break_myeb",
+  "card_number",
+  "branch",
+  "total_amount",
+  "total_earning",
+  "system_datetime",
+  "card_type_code",
+  "transaction_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "link_filters": "[[\"Customer\",\"active\",\"=\",1]]",
+   "options": "Customer",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Transaction Type",
+   "link_filters": "[[\"Loyalty Transaction Type\",\"parent\",\"=\",\"eval: doc.card_type\"]]",
+   "options": "Loyalty Transaction Type",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "register_num",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Regsiter Num",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transnum",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Transaction #",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_myeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_id.card_number",
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Number",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Amount",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_earning",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Earning Amount",
+   "precision": "2"
+  },
+  {
+   "default": "Now",
+   "fieldname": "system_datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "system_datetime"
+  },
+  {
+   "fetch_from": "customer_id.card_type_code",
+   "fieldname": "card_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "card_type_code"
+  },
+  {
+   "fetch_from": "transaction_type.transaction_code",
+   "fieldname": "transaction_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "transaction_code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-16 08:02:45.927603",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Add Points",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

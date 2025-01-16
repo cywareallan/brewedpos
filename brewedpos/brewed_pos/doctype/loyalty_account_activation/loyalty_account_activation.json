@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-01-16 08:19:12.786763",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "branch",
+  "activate_reason",
+  "column_break_apzk",
+  "card_number",
+  "system_datetime",
+  "card_type_code",
+  "reason_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "link_filters": "[[\"Customer\",\"active\",\"=\",0]]",
+   "options": "Customer",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activate_reason",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activation Reason",
+   "link_filters": "[[\"Loyalty Deactivate Reasons\",\"activate\",\"=\",1]]",
+   "options": "Loyalty Deactivate Reasons",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_apzk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_id.card_number",
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Card Number",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "system_datetime",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Date Time"
+  },
+  {
+   "fetch_from": "customer_id.card_type_code",
+   "fieldname": "card_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "card_type_code"
+  },
+  {
+   "fetch_from": "activate_reason.deactivate_code",
+   "fieldname": "reason_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "reason_code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-16 08:30:26.894045",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Account Activation",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

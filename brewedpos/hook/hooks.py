@@ -9,9 +9,8 @@ app_license = "mit"
 # ---------------
 # Sync ERP records with the POS database
 doc_events = {
-    "ConsAllan": {
-        "on_update": "brewedpos.hook_consallan.api.ca_update",
- 	 	"after_insert": "brewedpos.hook_consallan.api.ca_update"
+    "Loyalty Customer Card": {
+ 	 	"before_insert": "brewedpos.hook_customer_card.api.validate_account"
  	}
  	# "Company": {
  	# 	"on_trash": "brewedpos.hook_company.api.company_delete",
