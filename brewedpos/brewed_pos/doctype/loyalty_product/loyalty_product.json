@@ -1,23 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{application_type_code}",
- "creation": "2024-12-13 19:34:18.463879",
+ "creation": "2025-03-25 16:37:02.827993",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "application_type_code",
+  "product_code",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "application_type_code",
+   "fieldname": "product_code",
    "fieldtype": "Data",
-   "ignore_user_permissions": 1,
    "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Application Type Code",
+   "label": "Product Code",
    "reqd": 1,
    "search_index": 1
   },
@@ -25,23 +21,32 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Description",
-   "length": 64,
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "istable": 1,
  "links": [],
- "modified": "2025-01-22 14:33:08.079160",
+ "modified": "2025-03-25 16:37:51.295119",
  "modified_by": "Administrator",
  "module": "Brewed POS",
- "name": "Loyalty Application Type",
- "naming_rule": "Expression",
+ "name": "Loyalty Product",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

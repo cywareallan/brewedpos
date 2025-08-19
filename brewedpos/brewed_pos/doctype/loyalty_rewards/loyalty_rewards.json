@@ -10,7 +10,8 @@
   "reward_code",
   "description",
   "points",
-  "reward_type_code"
+  "reward_type_code",
+  "item"
  ],
  "fields": [
   {
@@ -58,11 +59,18 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "reward_type_code"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "link_filters": "[[\"Item\",\"item_group\",\"=\",\"Rewards\"]]",
+   "options": "Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 09:52:15.099220",
+ "modified": "2025-01-24 13:08:56.034513",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Rewards",

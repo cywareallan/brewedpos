@@ -1,8 +1,21 @@
 [
  {
+  "description": "ISHIO CF INDUCTION COOKER",
+  "docstatus": 0,
+  "doctype": "Loyalty Rewards",
+  "item": "03-001-0372",
+  "modified": "2025-01-24 13:13:44.210109",
+  "name": "ISHIO CF INDUCTION COOKER",
+  "points": 2900.0,
+  "reward_code": "03-001-0372",
+  "reward_type": "Ishio Items",
+  "reward_type_code": "ISHIO"
+ },
+ {
   "description": "Royal Umbrella",
   "docstatus": 0,
   "doctype": "Loyalty Rewards",
+  "item": null,
   "modified": "2025-01-15 16:18:59.725717",
   "name": "Royal Umbrella",
   "points": 100.0,

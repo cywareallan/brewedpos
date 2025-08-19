@@ -3,6 +3,41 @@
   "amount": 1.0,
   "application_type": [
    {
+    "application_type_code": "wi",
+    "description": "Walk In",
+    "parent": "VIP",
+    "parentfield": "application_type",
+    "parenttype": "Loyalty Card Type"
+   }
+  ],
+  "card_type_code": "VIP",
+  "description": "VIP",
+  "docstatus": 0,
+  "doctype": "Loyalty Card Type",
+  "expiry_days": 36500,
+  "is_active": 1,
+  "is_upgrade": 0,
+  "minimum_age": 18,
+  "minimum_points": 1.0,
+  "modified": "2025-01-24 13:12:02.904874",
+  "name": "VIP",
+  "points": 1.0,
+  "remap_type": [],
+  "reward_type": [
+   {
+    "description": "Ishio Items",
+    "parent": "VIP",
+    "parentfield": "reward_type",
+    "parenttype": "Loyalty Card Type",
+    "reward_type_code": "ISHIO"
+   }
+  ],
+  "transaction_type": []
+ },
+ {
+  "amount": 1.0,
+  "application_type": [
+   {
     "application_type_code": "walkin",
     "description": "Walk Inss",
     "parent": "gold-Gold",

@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{promo_code}-{description}",
+ "creation": "2025-01-16 16:11:46.151345",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "promo_type",
+  "promo_code",
+  "description",
+  "is_multiply",
+  "promo_points",
+  "date_echq",
+  "column_break_xjqz",
+  "start_date",
+  "end_date",
+  "minimum"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "promo_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Promo Type",
+   "options": "Loyalty Promo Type",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "promo_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Promo Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_multiply",
+   "fieldtype": "Check",
+   "label": "Multiply Flag"
+  },
+  {
+   "fieldname": "promo_points",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Promo Points",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_echq",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "column_break_xjqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "minimum",
+   "fieldtype": "Float",
+   "label": "Minimum Purchase Amount",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-16 16:17:28.871498",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Promo Setup",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

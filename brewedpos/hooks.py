@@ -9,9 +9,9 @@ app_license = "mit"
 # ---------------
 # Sync ERP records with the POS database
 doc_events = {
-    #"Loyalty Manual Entry": {
- 	#	"after_insert": "brewedpos.hook_manual_entry.api.validate_entry"
- 	#},
+    #"Loyalty Redemption": {
+    #		"after_insert": "brewedpos.hook_loyalty_redemption.api.process_redeem"
+    #	}
     #"Loyalty Card Type": {
  	#	"before_insert": "brewedpos.hook_customer_card.api.validate_account"
  	#}
@@ -41,4 +41,4 @@ doc_events = {
  	# }
 }
 
-fixtures = ['Customer', 'Loyalty Transaction Type', 'Loyalty Application Type', 'Loyalty Reward Type', 'Loyalty Remap Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 'Loyalty PIN Change Reason', 'Loyalty Deactivate Reasons', 'Loyalty Card Type', 'Loyalty Customer Attribute', 'Loyalty Rewards', 'Loyalty Redemption', 'Loyalty PIN Entry', 'Loyalty Card Replacement', 'Loyalty Account Activation', 'Loyalty Account Deactivation', 'Loyalty Add Points', 'Custom Field', 'Property Setter']
+fixtures = ['Loyalty Transaction Type', 'Loyalty Application Type', 'Loyalty Reward Type', 'Loyalty Remap Type', 'Loyalty Attribute Type', 'Loyalty Attribute', 'Loyalty PIN Change Reason', 'Loyalty Deactivate Reasons', 'Loyalty Card Type', 'Loyalty Customer Attribute', 'Loyalty Rewards', 'Loyalty Redemption', 'Loyalty PIN Entry', 'Loyalty Card Replacement', 'Loyalty Account Activation', 'Loyalty Account Deactivation', 'Loyalty Add Points', 'Custom Field', 'Property Setter']

@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{card_type_code}-{parent}",
+ "creation": "2025-01-16 16:18:45.800137",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_type",
+  "card_type_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Card Type",
+   "options": "Loyalty Card Type",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "card_type.card_type_code",
+   "fieldname": "card_type_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "card_type_code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-16 16:20:26.483603",
+ "modified_by": "Administrator",
+ "module": "Brewed POS",
+ "name": "Loyalty Promo Card Type",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

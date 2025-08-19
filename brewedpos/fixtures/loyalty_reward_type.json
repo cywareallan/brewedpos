@@ -9,5 +9,16 @@
   "parentfield": "reward_type",
   "parenttype": "Loyalty Card Type",
   "reward_type_code": "merch"
+ },
+ {
+  "description": "Ishio Items",
+  "docstatus": 0,
+  "doctype": "Loyalty Reward Type",
+  "modified": "2025-01-24 13:12:02.904874",
+  "name": "Ishio Items",
+  "parent": "VIP",
+  "parentfield": "reward_type",
+  "parenttype": "Loyalty Card Type",
+  "reward_type_code": "ISHIO"
  }
 ]

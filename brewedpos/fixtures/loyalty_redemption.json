@@ -1,1 +1,40 @@
-[]
+[
+ {
+  "branch": "Joel`s Place - JT",
+  "card_number": "799497494",
+  "card_type_code": "VIP",
+  "customer_id": "799497494VIP",
+  "docstatus": 0,
+  "doctype": "Loyalty Redemption",
+  "modified": "2025-01-24 16:36:09.283755",
+  "name": 42,
+  "pin": 1111,
+  "quantity": 2,
+  "reward": "ISHIO CF INDUCTION COOKER",
+  "reward_code": "03-001-0372",
+  "reward_points": 2900.0,
+  "reward_type": "Ishio Items",
+  "reward_type_code": "ISHIO",
+  "system_datetime": "2025-01-24 13:26:53",
+  "transaction_date": "2025-01-24"
+ },
+ {
+  "branch": "Joel`s Place - JT",
+  "card_number": "799497494",
+  "card_type_code": "VIP",
+  "customer_id": "799497494VIP",
+  "docstatus": 0,
+  "doctype": "Loyalty Redemption",
+  "modified": "2025-01-24 16:40:14.728710",
+  "name": 43,
+  "pin": 1111,
+  "quantity": 1,
+  "reward": "ISHIO CF INDUCTION COOKER",
+  "reward_code": "03-001-0372",
+  "reward_points": 2900.0,
+  "reward_type": "Ishio Items",
+  "reward_type_code": "ISHIO",
+  "system_datetime": "2025-01-24 16:39:06",
+  "transaction_date": "2025-01-24"
+ }
+]
