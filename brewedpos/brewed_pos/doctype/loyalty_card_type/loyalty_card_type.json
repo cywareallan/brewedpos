@@ -39,8 +39,8 @@
    "in_preview": 1,
    "label": "Card Type Code",
    "reqd": 1,
-   "search_index": 1,
-   "set_only_once": 1
+   "set_only_once": 1,
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -156,7 +156,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-22 14:30:00.386175",
+ "modified": "2025-08-19 16:31:24.543204",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Card Type",

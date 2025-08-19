@@ -17,7 +17,7 @@
    "in_standard_filter": 1,
    "label": "PIN Reason Code",
    "reqd": 1,
-   "search_index": 1
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -32,7 +32,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 09:56:30.573841",
+ "modified": "2025-08-19 16:33:20.002554",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty PIN Change Reason",

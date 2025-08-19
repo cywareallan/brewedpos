@@ -17,7 +17,7 @@
    "in_standard_filter": 1,
    "label": "Attribute Type Code",
    "reqd": 1,
-   "search_index": 1
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -31,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-16 09:56:00.113456",
+ "modified": "2025-08-19 16:34:08.595207",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Attribute Type",
