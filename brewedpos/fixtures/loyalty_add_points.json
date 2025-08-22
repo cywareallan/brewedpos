@@ -1,1 +1,21 @@
-[]
+[
+ {
+  "branch": "000011 - Glorietta 4 - JT",
+  "card_number": "999926023",
+  "card_type_code": "VIP",
+  "customer_id": "999926023VIP",
+  "docstatus": 0,
+  "doctype": "Loyalty Add Points",
+  "modified": "2025-08-21 14:58:17.682575",
+  "name": 1,
+  "register_num": 5,
+  "system_datetime": "2025-08-21 14:57:45",
+  "total_amount": 100.0,
+  "total_earning": 100.0,
+  "trans_points": 0.0,
+  "transaction_code": "100",
+  "transaction_date": "2025-08-21",
+  "transaction_type": "Manual Entry",
+  "transnum": 101
+ }
+]

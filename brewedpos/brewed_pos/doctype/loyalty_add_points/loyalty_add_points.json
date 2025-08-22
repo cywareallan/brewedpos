@@ -10,6 +10,7 @@
   "transaction_date",
   "register_num",
   "transnum",
+  "trans_points",
   "column_break_myeb",
   "card_number",
   "branch",
@@ -118,11 +119,18 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "transaction_code"
+  },
+  {
+   "fieldname": "trans_points",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Points",
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-19 16:37:25.190188",
+ "modified": "2025-08-22 13:27:45.841895",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Add Points",

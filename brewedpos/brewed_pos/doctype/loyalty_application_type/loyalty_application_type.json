@@ -18,8 +18,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Application Type Code",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -35,7 +34,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-19 16:31:43.352600",
+ "modified": "2025-08-22 13:35:42.490223",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Application Type",

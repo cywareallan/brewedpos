@@ -14,8 +14,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Product Code",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -28,7 +27,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-19 16:30:38.688811",
+ "modified": "2025-08-22 13:36:13.638597",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Product",

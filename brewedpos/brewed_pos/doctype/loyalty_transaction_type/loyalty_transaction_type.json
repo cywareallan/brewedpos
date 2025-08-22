@@ -18,8 +18,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Transaction Code",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -42,7 +41,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-19 16:36:30.787867",
+ "modified": "2025-08-22 13:30:12.923871",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Transaction Type",

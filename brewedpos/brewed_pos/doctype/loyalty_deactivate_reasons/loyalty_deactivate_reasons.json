@@ -17,8 +17,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Reason Code",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -39,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-19 16:36:12.329202",
+ "modified": "2025-08-22 13:30:50.816282",
  "modified_by": "Administrator",
  "module": "Brewed POS",
  "name": "Loyalty Deactivate Reasons",
